@@ -1,0 +1,123 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Orange500: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 100%, 100%);
+    --Grey500: hsl(217, 12%, 63%);
+    --Grey900: hsl(213, 19%, 18%);
+    --Grey950: hsl(216, 12%, 8%);
+    
+    /* fonts */
+    
+    --fonte1: 'Overpass';
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    font-family: var(--fonte1);
+}
+main{
+    background-color: var(--Grey950);
+    min-height:100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    min-width: 300px;
+    max-width: 375px;
+}
+section h1{
+    color: white;
+    margin-top: 15px;
+}
+section p{
+    font-size: 15px;
+    color: var(--Grey500);
+    margin: 15px 0px;
+    line-height: 25px;
+}
+input[type='radio']{
+    display: none;
+}
+div#label{
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#display1 label{
+    background-color: var(--Grey950);
+    border-radius: 50%;
+    color: var(--Grey500);
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .5s;
+}
+#display1 label:hover{
+    background-color: var(--Orange500);
+    color: black;
+    cursor: pointer;
+}
+input[type="submit"]{
+    display: block;
+    margin: 15px 0px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: var(--Orange500);
+    border: 2px solid black;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--Grey950);
+    transition: ease-in-out .5s;
+}
+input[type="submit"]:hover{
+    background-color: white;
+    cursor: pointer;
+}
+#display2 span#select{
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--Grey950);
+    padding: 10px;
+    color: var(--Orange500);
+    border-radius: 20px;
+}
+img{
+    display: block;
+}
+#display2 img{
+    margin: auto;
+}
+section#display1{
+    background-color:var(--Grey900) ;
+    display: block;
+}
+section#display2{
+    background-color:var(--Grey900) ;
+    display: block;
+    text-align: center;
+}
